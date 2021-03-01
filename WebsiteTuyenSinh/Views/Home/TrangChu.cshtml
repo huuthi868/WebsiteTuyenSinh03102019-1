@@ -1,0 +1,170 @@
+﻿@model WebsiteTuyenSinh.Models.TrangChuViewModel
+
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/assets/client/js/engine1/style.css" rel="stylesheet" />
+<style type="text/css">
+    .desktop .modal.in .modal-dialog {
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        margin: 0px;
+        width: 30%;
+    }
+</style>
+@* Slider *@
+<div class="block-nopadding slideshow mbot-5">
+    <div class="content noidung">
+        <div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+                    @foreach (var item in Model.Slider)
+                    {
+                    <li>
+                        <a href="@item.Link">
+                            <img src="http://api-bantuyensinh.cdktcnqn.edu.vn/@item.TenHinh" alt="Tuyển sinh - Trường cao đẳng kỹ thuật công nghệ Quy Nhơn" id="@item.ID" />
+                        </a>
+                    </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+@* Slider *@
+
+<div class="block-nopadding no-padding-home">
+    <div class="content noidung">
+        <div class="col-sm-9 no-padding-left padding-right-5">
+            <!-- Template Start: site/news/WrapNewsLeft -->
+            <div class="col-sm-12 block-content nopadding">
+                <div class="header-block">
+                    <img class="icon-tin-tuyen-sinh" src="~/assets/client/img/img_blank.gif" />
+                    <span class="title-block text-blue">Tin tuyển sinh</span>
+                </div>
+                <div class="content-block">
+                    <div class="col-sm-12 nopadding">
+                        <div class="col-xs-12 col-md-9 news-block-left">
+                            @foreach (var item in Model.Top3TinTuyenSinh)
+                            {
+                                <div style="margin-bottom:5px;border-bottom: 1px dotted #ccc">
+                                    <a class="news-title text-blue" title="@item.TieuDe" href="/tin-tuyen-sinh/@item.TinTucLink-@item.ID">@item.TieuDe</a>
+                                    <div class="image-news-home">
+                                        <a href="/tin-tuyen-sinh/@item.TinTucLink-@item.ID" class="link-img">
+                                            <img class="img-responsive mb-10 mt-10" alt="@item.TieuDe" src="http://api-bantuyensinh.cdktcnqn.edu.vn/@item.HinhThuNho" />
+                                        </a>
+                                    </div>
+                                    <p class="des_news">
+                                        @item.TomTat
+                                    </p>
+                                </div>
+                            }
+                        </div>
+                        <div class="col-xs-12 col-md-3 news-block-right">
+                            @foreach (var item in Model.TinLienQuanTuyenSinh)
+                            {
+                                <div style="max-height: 100px;overflow: hidden;">
+                                    <a href="/tin-tuyen-sinh/@item.TinTucLink-@item.ID" class="link-img">
+                                        <img class="img-responsive mbot-5" alt="@item.TieuDe" src="http://api-bantuyensinh.cdktcnqn.edu.vn/@item.HinhThuNho" />
+                                    </a>
+                                </div>
+                                <a class="title" title="@item.TieuDe" href="/tin-tuyen-sinh/@item.TinTucLink-@item.ID">@item.TieuDe</a>
+                            }
+                            @* Xem tất cả *@
+                            <div class="col-sm-12 text-right padding">
+                                <a href="/tin-tuyen-sinh/thong-bao-tuyen-sinh" class="text-red text-bold">
+                                    <i class="fa fa-plus-square fa-1 text-red" aria-hidden="true"></i>
+                                    Xem tất cả
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .no-padding-home {
+                    padding: 0 !important;
+                }
+            </style>
+            <!-- Template End: site/news/WrapNewsLeft -->
+        </div>
+        <div class="col-sm-3 nopadding">
+            <!-- Template Start: site/common/WrapVideo -->
+            <div class="block-content">
+                <div class="header-block">
+                    <div class="">
+                        <img class="icon-hutech-tv" src="~/assets/client/img/img_blank.gif">
+                        <span class="title-block text-orange">Facebook</span>
+                    </div>
+                </div>
+                <div class="video">
+                </div>
+                <div class="fb-page" data-href="https://www.facebook.com/caodangktcnqn/" data-height="230px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/caodangktcnqn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/caodangktcnqn/">QCET</a></blockquote></div>
+            </div>
+
+            @* Tin liên quan *@
+            <div class="block-content">
+                @foreach (var item in Model.TinLienQuan)
+                {
+                    <div class="tinlienquan">
+                        <a style="background-color:@item.Mau;" href="@item.LienKet">
+                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;@item.TieuDe</span>
+                        </a>
+                    </div>
+                }
+            </div>
+            @* Liên kết đăng ký trực tuyến *@
+            <div class="block-content">
+                <div class="header-block">
+                    <div class="">
+                        <img class="icon-hutech-tv" src="~/assets/client/img/img_blank.gif">
+                        <span class="title-block text-orange">Đăng ký trực tuyến</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="/dang-ky">
+                        <img class="wi-100" src="~/assets/client/img/banner/img/DANGKYTRUCTUYEN.png" />
+                    </a>
+                </div>
+            </div>
+            @* Đăng ký tư vấn trực tiếp *@
+            <div class="block-content">
+                <div class="header-block">
+                    <div class="">
+                        <img class="icon-hutech-tv" src="~/assets/client/img/img_blank.gif">
+                        <span class="title-block text-orange">Hỏi đáp</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="/hoi-dap">
+                        <img class="wi-100" frameborder="0" src="~/assets/client/img/banner/img/TUVANTRUCTUYEN.png" />
+                    </a>
+                </div>
+            </div>
+            @* Tra cứu kết quả *@
+            <div class="block-content">
+                <div class="header-block">
+                    <div class="">
+                        <img class="icon-hutech-tv" src="~/assets/client/img/img_blank.gif">
+                        <span class="title-block text-orange">Tra cứu kết quả</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="/ket-qua">
+                        <img class="wi-100" frameborder="0" src="~/assets/client/img/banner/img/TRACUUKETQUA.png" />
+                    </a>
+                </div>
+            </div>           
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+    <script src="~/assets/client/js/engine1/wowslider.js"></script>
+    <script src="~/assets/client/js/engine1/script.js"></script>
+}

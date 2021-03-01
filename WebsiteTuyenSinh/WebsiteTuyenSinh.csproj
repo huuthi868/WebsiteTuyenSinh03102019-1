@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{050012AD-7EDC-43D1-9EEE-6C97F1BEE249}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebsiteTuyenSinh</RootNamespace>
+    <AssemblyName>WebsiteTuyenSinh</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\client\css\bootstrap-datepicker.min.css" />
+    <Content Include="assets\client\css\jquery.toast.css" />
+    <Content Include="assets\client\css\style.css" />
+    <Content Include="assets\client\font\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\client\img\arrow-right.png" />
+    <Content Include="assets\client\img\backDangKy.jpg" />
+    <Content Include="assets\client\img\background.png" />
+    <Content Include="assets\client\img\back_DangKy.jpeg" />
+    <Content Include="assets\client\img\banner\img\banner.jpg" />
+    <Content Include="assets\client\img\banner\img\DANGKYTRUCTUYEN.png" />
+    <Content Include="assets\client\img\banner\img\SmallBanner.jpg" />
+    <Content Include="assets\client\img\banner\img\SmallBanner.png" />
+    <Content Include="assets\client\img\banner\img\TUVANTRUCTUYEN.png" />
+    <Content Include="assets\client\img\banner\img\TRACUUKETQUA.png" />
+    <Content Include="assets\client\img\td.png" />
+    <Content Include="assets\client\img\zalo-icon.png" />
+    <Content Include="assets\client\img\zalo.png" />
+    <Content Include="assets\client\img\bullet1.gif" />
+    <Content Include="assets\client\img\dkhcd.png" />
+    <Content Include="assets\client\img\dkhlt.png" />
+    <Content Include="assets\client\img\dkhtcthcs.png" />
+    <Content Include="assets\client\img\dktcthpt.png" />
+    <Content Include="assets\client\img\favicon.ico" />
+    <Content Include="assets\client\img\go-to-top.png" />
+    <Content Include="assets\client\img\icon-hutech.png" />
+    <Content Include="assets\client\img\img_blank.gif" />
+    <Content Include="assets\client\img\newicon_vi.gif" />
+    <Content Include="assets\client\img\thong-tin-dang-ky.png" />
+    <Content Include="assets\client\img\thong-tin-thi-sinh.png" />
+    <Content Include="assets\client\jsdb\DangKyTrungCapTHCS.js" />
+    <Content Include="assets\client\jsdb\DangKyLienThongjs.js" />
+    <Content Include="assets\client\jsdb\DangKyTrungCapTHPT.js" />
+    <Content Include="assets\client\jsdb\GuiCauHoijs.js" />
+    <Content Include="assets\client\jsdb\GuiLienHejs.js" />
+    <Content Include="assets\client\jsdb\DangKyCaoDangjs.js" />
+    <Content Include="assets\client\js\angular.min.js" />
+    <Content Include="assets\client\js\bootbox.js" />
+    <Content Include="assets\client\js\bootstrap-datepicker-vi.js" />
+    <Content Include="assets\client\js\bootstrap-datepicker.js" />
+    <Content Include="assets\client\js\ddaccordion.js" />
+    <Content Include="assets\client\js\engine1\fullscreen.svg" />
+    <Content Include="assets\client\js\engine1\jquery.js" />
+    <Content Include="assets\client\js\engine1\script.js" />
+    <Content Include="assets\client\js\engine1\style.css" />
+    <Content Include="assets\client\js\engine1\style.mod.css" />
+    <Content Include="assets\client\js\engine1\wowslider.js" />
+    <Content Include="assets\client\js\engine1\wowslider.mod.js" />
+    <Content Include="assets\client\js\engine1\ws-ctrl-rhomb.svg" />
+    <Content Include="assets\client\js\jquery.toast.js" />
+    <Content Include="assets\client\js\jquery.touchSwipe.min.js" />
+    <Content Include="assets\client\js\responsive_bootstrap_carousel.js" />
+    <Content Include="assets\client\js\slidebars.js" />
+    <Content Include="assets\client\js\ui-bootstrap-tpls-1.3.3.js" />
+    <Content Include="assets\client\js\ui-mask.js" />
+    <Content Include="assets\client\css\compiled-4.8.0.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="images\icon-hutech.png" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="assets\client\font\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\client\font\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\client\font\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\client\font\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\client\font\sfu-futura2\SFUFuturaBold.TTF" />
+    <Content Include="assets\client\font\sfu-futura2\SFUFuturaBook.TTF" />
+    <Content Include="assets\client\font\sfu-futura2\SFUFuturaExtraBold.TTF" />
+    <Content Include="assets\client\font\sfu-futura2\SFUFuturaHeavy.TTF" />
+    <Content Include="assets\client\js\engine1\fullscreen.eot" />
+    <Content Include="assets\client\js\engine1\fullscreen.ttf" />
+    <Content Include="assets\client\js\engine1\fullscreen.woff" />
+    <Content Include="assets\client\js\engine1\ws-ctrl-rhomb.eot" />
+    <Content Include="assets\client\js\engine1\ws-ctrl-rhomb.ttf" />
+    <Content Include="assets\client\js\engine1\ws-ctrl-rhomb.woff" />
+    <None Include="Properties\PublishProfiles\clientBanTuyenSinh.pubxml" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Data\App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DangKyController.cs" />
+    <Compile Include="Controllers\GioiThieuController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KetQuaController.cs" />
+    <Compile Include="Controllers\LienHeController.cs" />
+    <Compile Include="Controllers\NganhDaoTaoController.cs" />
+    <Compile Include="Controllers\PhongKhoaController.cs" />
+    <Compile Include="Controllers\TinSinhVienController.cs" />
+    <Compile Include="Controllers\TinTuyenSinhController.cs" />
+    <Compile Include="Controllers\TuVanController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="Models\ChiTietViewModel.cs" />
+    <Compile Include="Models\DangKyCaoDangViewModel.cs" />
+    <Compile Include="Models\DangKyLienThongCaoDangViewModel.cs" />
+    <Compile Include="Models\DangKyTrungCap2NamViewModel.cs" />
+    <Compile Include="Models\GioiThieuTruongViewModel.cs" />
+    <Compile Include="Models\HoiDapViewModel.cs" />
+    <Compile Include="Models\KetQuaViewModel.cs" />
+    <Compile Include="Models\ThongBaoKetQuaViewModel.cs" />
+    <Compile Include="Models\LienHeViewModel.cs" />
+    <Compile Include="Models\NgheDaoTaoViewModel.cs" />
+    <Compile Include="Models\PhongKhoaViewModel.cs" />
+    <Compile Include="Models\PhongKhoa_NgheViewModel.cs" />
+    <Compile Include="Models\SliderViewModel.cs" />
+    <Compile Include="Models\SinhVienTieuBieuViewModel.cs" />
+    <Compile Include="Models\ThongBaoTuyenSinhViewModel.cs" />
+    <Compile Include="Models\TinLienQuanViewModel.cs" />
+    <Compile Include="Models\TinSinhVienViewModel.cs" />
+    <Compile Include="Models\TinTuyenSinhViewModel.cs" />
+    <Compile Include="Models\TrangChuViewModel.cs" />
+    <Compile Include="Models\TuVanTrucTuyenViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TinTucViewModel.cs" />
+    <Compile Include="TinTucViewModel1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\NganhDaoTao\ChiTiet.cshtml" />
+    <Content Include="Views\DangKy\CaoDang.cshtml" />
+    <Content Include="Views\DangKy\TrungCapTHPT.cshtml" />
+    <Content Include="Views\DangKy\TrungCapTHCS.cshtml" />
+    <Content Include="Views\DangKy\LienThong.cshtml" />
+    <Content Include="Views\Home\TrangChu.cshtml" />
+    <Content Include="Views\TinTuyenSinh\ChiTiet.cshtml" />
+    <Content Include="Views\LienHe\LienHe.cshtml" />
+    <Content Include="Views\KetQua\KetQua.cshtml" />
+    <Content Include="Views\TuVan\TuVan.cshtml" />
+    <Content Include="Views\NganhDaoTao\NganhDaoTao.cshtml" />
+    <Content Include="Views\TinTuyenSinh\TinTuyenSinh.cshtml" />
+    <Content Include="Views\DangKy\DangKy.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\TinSinhVien\TinSinhVien.cshtml" />
+    <Content Include="Views\TinSinhVien\ChiTietSinhVienNoiBat.cshtml" />
+    <Content Include="Views\GioiThieu\BanGiamHieu.cshtml" />
+    <Content Include="Views\GioiThieu\CongDoan.cshtml" />
+    <Content Include="Views\GioiThieu\CoSoVatChat.cshtml" />
+    <Content Include="Views\GioiThieu\DangBo.cshtml" />
+    <Content Include="Views\GioiThieu\DinhHuongPhatTrien.cshtml" />
+    <Content Include="Views\GioiThieu\DoanThanhNien.cshtml" />
+    <Content Include="Views\GioiThieu\GioiThieuTruong.cshtml" />
+    <Content Include="Views\GioiThieu\KyYeuNhaTruong.cshtml" />
+    <Content Include="Views\GioiThieu\LichSuPhatTrien.cshtml" />
+    <Content Include="Views\GioiThieu\MucTieuChatLuong.cshtml" />
+    <Content Include="Views\GioiThieu\NangLucDaoTao.cshtml" />
+    <Content Include="Views\GioiThieu\SoDoToChuc.cshtml" />
+    <Content Include="Views\GioiThieu\ThanhTichDatDuoc.cshtml" />
+    <Content Include="Views\PhongKhoa\ChiTietPhongKhoa.cshtml" />
+    <Content Include="Views\PhongKhoa\Khoa.cshtml" />
+    <Content Include="Views\PhongKhoa\Phong.cshtml" />
+    <Content Include="Views\Shared\_RightBody.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60968</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60968/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

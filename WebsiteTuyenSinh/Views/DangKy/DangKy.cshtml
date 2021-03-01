@@ -1,0 +1,85 @@
+﻿@model IList<WebsiteTuyenSinh.Models.TinTuyenSinhViewModel>
+
+@{
+    ViewBag.Title = "Đăng ký xét tuyển trực tuyến";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="block-nopadding no-padding-home">
+    <div class="content noidung" style="background:white;">
+        <div class="block-content mobi">
+            <ul>
+                <li class="mb-10 mt-10">
+                    <a href="/dang-ky/cao-dang">
+                        Đăng ký hệ cao đẳng
+                    </a>
+                </li>
+                <li class="mb-10">
+                    <a href="/dang-ky/trung-cap-thcs">
+                        Đăng ký hệ trung cấp (thí sinh tốt nghiệp THCS)
+                    </a>
+                </li>
+                <li class="mb-10">
+                    <a href="/dang-ky/trung-cap-thpt">
+                        Đăng ký hệ trung cấp (thí sinh tốt nghiệp THPT)
+                    </a>
+                </li>
+                <li class="mb-10">
+                    <a href="/dang/lien-thong-cao-dang">
+                        Đăng ký liên thông cao đẳng
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="DangKyTuyenSinh desktop" style="background-image: url('/assets/client/img/backDangKy.jpg');width:100%;">
+            <ul>
+                <li class="mb-10">
+                    <a href="/dang-ky/cao-dang">
+                        <img src="~/assets/client/img/dkhcd.png" />
+                    </a>
+                </li>
+                <li class="mb-10">
+                    <a href="/dang-ky/trung-cap-thcs">
+                        <img src="~/assets/client/img/dkhtcthcs.png">
+                    </a>
+                </li>
+                <li class="mb-10">
+                    <a href="/dang-ky/trung-cap-thpt">
+                        <img src="~/assets/client/img/dktcthpt.png">
+                    </a>
+                </li>
+                <li class="mb-10">
+                    <a href="/dang-ky/lien-thong-cao-dang">
+                        <img src="~/assets/client/img/dkhlt.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        @* Tin liên quan *@
+        <div class="block-content nopadding">            
+            <div class="header-block">
+                <img class="icon-tin-tuyen-sinh" src="~/assets/client/img/img_blank.gif" />
+                <span class="title-block text-orange">Thông báo tuyển sinh</span>
+            </div>
+            <div class="content-block">
+                @foreach (var item in Model)
+                {
+                    <ul class="latestnews">
+                        <li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
+                            <a class="latestnews" href="/tin-tuyen-sinh/@item.TinTucLink-@item.ID">
+                                @item.TieuDe
+                            </a>
+                        </li>
+                    </ul>
+                }
+
+                <div class="col-sm-12 text-right padding wow slideInUp animated animated" style="visibility: visible; animation-name: slideInUp;">
+                    <a href="/tin-tuyen-sinh/thong-bao-tuyen-sinh" class="text-red text-bold"><i class="fa fa-plus-square fa-1 text-red" aria-hidden="true"></i> Xem tất cả</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
