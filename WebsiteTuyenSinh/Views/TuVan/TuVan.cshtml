@@ -7,43 +7,7 @@
 
 <div class="block-nopadding no-padding-home">
     <div class="content noidung">
-        <div class="col-sm-9 no-padding-left padding-right-5">
-            <div class="col-sm-12 block-content nopadding">
-                <div class="header-block">
-                    <img class="icon-tin-tuyen-sinh" src="~/assets/client/img/img_blank.gif" />
-                    <span class="title-block text-blue">Hỏi đáp</span>
-                </div>
-                <div class="content-block">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <input type="text" value="@ViewBag.TuKhoa" class="form-control text-center TuVan" id="txtTuKhoa" placeholder="Nhập câu hỏi cần tra cứu">
-                        </div>
-                    </div>
-                    <br />
-                    @foreach (var item in Model.lstHoiDap)
-                    {
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="panel panel-info">
-                                    <div class="panel-heading">
-                                        <span class="CauHoi">Câu hỏi:</span> @item.CauHoi
-                                        <br />
-                                        <span class="CauHoi">Người hỏi:</span><i> @item.HoTen</i>
-                                    </div>
-                                    <div class="panel-body">
-                                        <span class="TraLoi">Trả lời:</span>
-                                        @Html.Raw(item.TraLoi)
-                                    </div>
-                                    <div class="panel-footer">
-                                        <span class="TraLoi">Người trả lời:</span><b><i> @item.NguoiTraLoi</i></b>, ngày: @item.NgaySua
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                </div>
-            </div>
-        </div>
+      
         <div class="col-sm-3 nopadding">
             @* Form cau hỏi *@
             <div class="block-content">
@@ -81,59 +45,7 @@
                     </div>
                 </div>
             </div>
-            @* Tin liên quan *@
-            <div class="block-content">
-                @foreach (var item in Model.lstTinLienQuan)
-                {
-                    <div class="tinlienquan">
-                        <a style="background-color:@item.Mau;" href="@item.LienKet">
-                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;@item.TieuDe</span>
-                        </a>
-                    </div>
-                }
-            </div>
-            @* Liên kết đăng ký trực tuyến *@
-            <div class="block-content">
-                <div class="header-block">
-                    <div class="">
-                        <img class="icon-hutech-tv" src="~/assets/client/img/img_blank.gif">
-                        <span class="title-block text-orange">Đăng ký trực tuyến</span>
-                    </div>
-                </div>
-                <div class="video">
-                    <a href="/dang-ky">
-                        <img class="wi-100" src="~/assets/client/img/banner/img/DANGKYTRUCTUYEN.png" />
-                    </a>
-                </div>
-            </div>
-            @* Đăng ký tư vấn trực tiếp *@
-            <div class="block-content">
-                <div class="header-block">
-                    <div class="">
-                        <img class="icon-hutech-tv" src="~/assets/client/img/img_blank.gif">
-                        <span class="title-block text-orange">Hỏi đáp</span>
-                    </div>
-                </div>
-                <div class="video">
-                    <a href="/hoi-dap">
-                        <img class="wi-100" frameborder="0" src="~/assets/client/img/banner/img/TUVANTRUCTUYEN.png" />
-                    </a>
-                </div>
-            </div>
-            @* Tra cứu kết quả *@
-            <div class="block-content">
-                <div class="header-block">
-                    <div class="">
-                        <img class="icon-hutech-tv" src="~/assets/client/img/img_blank.gif">
-                        <span class="title-block text-orange">Tra cứu kết quả</span>
-                    </div>
-                </div>
-                <div class="video">
-                    <a href="/ket-qua">
-                        <img class="wi-100" frameborder="0" src="~/assets/client/img/banner/img/TRACUUKETQUA.png" />
-                    </a>
-                </div>
-            </div>
+        
         </div>
     </div>
 </div>

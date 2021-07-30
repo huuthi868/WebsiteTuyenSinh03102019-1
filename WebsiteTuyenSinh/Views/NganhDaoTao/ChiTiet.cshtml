@@ -1,7 +1,7 @@
 ﻿@model WebsiteTuyenSinh.Models.PhongKhoa_NgheViewModel
 @{
     ViewBag.Title = "Chi tiết nghề đào tạo";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_RightBody.cshtml";
 }
 <div class="block-nopadding no-padding-home">
     <div class="content noidung" style="background-color:white;">
@@ -10,7 +10,7 @@
                 <p class="titlepax text-center mt-10 td_1">@Model.TenNghe</p>
             </div>
             <div class="col-xs-12">
-                <p style="text-align:center">
+                <p style="text-align:center;">
                     @Html.Raw(Model.NoiDung)                    
                 </p>
             </div>

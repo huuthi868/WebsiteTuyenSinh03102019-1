@@ -12,5 +12,6 @@ namespace WebsiteTuyenSinh.Models
         public IList<TinTuyenSinhViewModel> TinLienQuanTuyenSinh;
         public IList<TinLienQuanViewModel> TinLienQuan;
         public TinTuyenSinhViewModel TinTuyenSinh;
+        public IList<HoiDapViewModel> lstHoiDap;
     }
 }

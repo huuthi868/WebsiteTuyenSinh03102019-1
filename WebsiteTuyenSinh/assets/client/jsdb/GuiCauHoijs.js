@@ -14,7 +14,7 @@
             var HoTen = $('#HoTen').val();
             var SoDienThoai = $('#SoDienThoai').val();
             var CauHoi = $('#CauHoi').val();
-
+         
             if (HoTen === '' || SoDienThoai === '' || CauHoi === '') {
                 $.toast({
                     heading: 'Thông báo',
@@ -54,7 +54,7 @@
         };
         $.ajax({
             url: '/TuVan/CreateHoiDap/',
-            data: { model: JSON.stringify(model) },
+            data: { model: JSON.stringify(model).toString() },
             type: 'POST',
             dataType: 'json',
             success: function (res) {

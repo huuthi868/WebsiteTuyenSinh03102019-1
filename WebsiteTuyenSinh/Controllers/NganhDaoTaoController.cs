@@ -15,7 +15,7 @@ namespace WebsiteTuyenSinh.Controllers
         {
             NgheDaoTaoViewModel cls = new NgheDaoTaoViewModel();
 
-            HttpResponseMessage Res = await GlobalVariables.WebApiClient.GetAsync("api/PhongKhoa_Nghe/getall");
+            HttpResponseMessage Res = await GlobalVariables.WebApiTruong.GetAsync("api/PhongKhoa_Nghe/getall");
             if (Res.IsSuccessStatusCode)
             {
                 var obj = Res.Content.ReadAsStringAsync().Result;
@@ -43,7 +43,7 @@ namespace WebsiteTuyenSinh.Controllers
         public async Task<ActionResult> ChiTiet(int id)
         {
             PhongKhoa_NgheViewModel cls = new PhongKhoa_NgheViewModel();
-            HttpResponseMessage Res = await GlobalVariables.WebApiClient.GetAsync("api/PhongKhoa_Nghe/getsinglebyid?id=" + id);
+            HttpResponseMessage Res = await GlobalVariables.WebApiTruong.GetAsync("api/PhongKhoa_Nghe/getsinglebyid?id=" + id);
             if (Res.IsSuccessStatusCode)
             {
                 var obj = Res.Content.ReadAsStringAsync().Result;
