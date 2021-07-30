@@ -1962,7 +1962,7 @@ body {
         }
 
     #SECTION2630 {
-        height: 522.92px;
+        height: 420.92px;
     }
 
         #SECTION2630.ladi-animation {
@@ -2111,7 +2111,7 @@ body {
         }
 
     #HEADLINE2680 {
-        width: 139px;
+        width: 200px;
         top: 27.779px;
         left: 160.224px;
     }
@@ -3286,7 +3286,7 @@ body {
     }
 
     #HEADLINE3507 {
-        width: 121px;
+        width: 160px;
         top: 29.779px;
         left: 648.224px;
     }
@@ -3412,7 +3412,7 @@ body {
     }
 
     #HEADLINE3518 {
-        width: 121px;
+        width: 160px;
         top: 33.779px;
         left: 1134.22px;
     }
@@ -9800,9 +9800,9 @@ body {
         }
 
     #HEADLINE2680 {
-        width: 139px;
+        width: 190px;
         top: 28.429px;
-        left: 136.161px;
+        left: 137.161px;
     }
 
         #HEADLINE2680 > .ladi-headline {
@@ -10121,7 +10121,7 @@ body {
     #CAROUSEL3109 {
         width: 420px;
         height: 213px;
-        top: 137.77px;
+        top: 105.77px;
         left: 0px;
     }
 
@@ -10932,9 +10932,9 @@ body {
     }
 
     #HEADLINE3507 {
-        width: 121px;
+        width: 150px;
         top: 31.429px;
-        left: 519.654px;
+        left: 544.654px;
     }
 
         #HEADLINE3507 > .ladi-headline {
@@ -11058,9 +11058,9 @@ body {
     }
 
     #HEADLINE3518 {
-        width: 121px;
+        width: 170px;
         top: 37.429px;
-        left: 957.593px;
+        left: 965px;
     }
 
         #HEADLINE3518 > .ladi-headline {
@@ -11093,7 +11093,7 @@ body {
 
     #LINE3650 {
         width: 102px;
-        top: 127.93px;
+        top: 98.93px;
         left: 157.5px;
     }
 
@@ -11955,7 +11955,7 @@ body {
 
     #SECTION3815 {
         height: 1006.16px;
-        margin-top: -273px;
+        margin-top: -386px;
     }
 
         #SECTION3815.ladi-animation {
@@ -12935,7 +12935,7 @@ body {
 
     #SECTION4016 {
         height: 685.233px;
-        margin-top: -301px;
+        margin-top: -156px;
     }
 
         #SECTION4016 > .ladi-section-background {
@@ -18298,7 +18298,7 @@ body {
     #GROUP4243 {
         width: 420px;
         height: 45px;
-        top: -73.606px;
+        top: -68.606px;
         left: 0px;
     }
 
@@ -18674,7 +18674,7 @@ body {
     #GROUP4298 {
         width: 400px;
         height: 213.675px;
-        top: -326px;
+        top: -217px;
         left: -5px;
     }
 
@@ -18721,7 +18721,7 @@ body {
 
     #PARAGRAPH4302 {
         width: 303px;
-        top: -103.017px;
+        top: 6.983px;
         left: 47.8435px;
     }
 
@@ -18743,7 +18743,7 @@ body {
     #GROUP4304 {
         width: 402.895px;
         height: 215.221px;
-        top: -339px;
+        top: -210px;
         left: -6px;
     }
 
@@ -18790,7 +18790,7 @@ body {
 
     #PARAGRAPH4308 {
         width: 305px;
-        top: -115.426px;
+        top: 14.574px;
         left: 48.1898px;
     }
 
@@ -18924,7 +18924,7 @@ body {
     #BUTTON4317 {
         width: 307.2857px;
         height: 40.4987px;
-        top: -98.513px;
+        top: 3.487px;
         left: 57.785px;
     }
 
@@ -20419,4 +20419,8 @@ span.directorist-select__selected-list--item:first-letter {
 .khoancach {
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.lienket {
+    text-decoration: none;
 }
