@@ -170,6 +170,7 @@
     <Content Include="assets\client\images\check.png" />
     <Content Include="assets\client\images\cohoi.png" />
     <Content Include="assets\client\images\congtruong.png" />
+    <Content Include="assets\client\images\conhung.jpg" />
     <Content Include="assets\client\images\coollogo_com-28052480.png" />
     <Content Include="assets\client\images\dantriganket.png" />
     <Content Include="assets\client\images\daotaodatchuan.png" />
@@ -181,6 +182,8 @@
     <Content Include="assets\client\images\ffff.png" />
     <Content Include="assets\client\images\hieutruong.png" />
     <Content Include="assets\client\images\hinhanhsukien.png" />
+    <Content Include="assets\client\images\hinhanhsukien1.png" />
+    <Content Include="assets\client\images\hinhanhsukien2.png" />
     <Content Include="assets\client\images\hinhvy.png" />
     <Content Include="assets\client\images\hinhvy1.png" />
     <Content Include="assets\client\images\hoavy.jpg" />

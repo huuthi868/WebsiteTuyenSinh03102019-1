@@ -8794,7 +8794,7 @@ body {
             top: -67px;
             left: 0px;
             /*background-image: url("https://w.ladicdn.com/s850x1050/5c458ab85341600348800ad4/hinh-anh-su-kien-20210312034124.png");*/
-            background-image: url('../images/hinhanhsukien.png');
+            background-image: url('../images/hinhanhsukien1.png');
         }
 
     #IMAGE4190 {
@@ -8810,7 +8810,7 @@ body {
             top: -69.298px;
             left: 0px;
             /*  background-image: url("https://w.ladicdn.com/s850x1050/5c458ab85341600348800ad4/11-20210312034124.png");*/
-            background-image: url('../images/hinhanhsukien.png');
+            background-image: url('../images/hinhanhsukien2.png');
         }
 
     #HEADLINE4191 {
@@ -18146,15 +18146,14 @@ body {
             top: -68.16px;
             left: 0px;
             /* background-image: url("https://w.ladicdn.com/s750x900/5c458ab85341600348800ad4/hinh-anh-su-kien-20210312034124.png");*/
-            background-image: url('../images/hinhanhsukien.png');
+            background-image: url('../images/hinhanhsukien1.png');
         }
 
     #IMAGE4190 {
         width: 413.851px;
         height: 529.382px;
-        top: 63.839px;
+        top: 577.839px;
         left: 3.0745px;
-        display: none;
     }
 
         #IMAGE4190 > .ladi-image > .ladi-image-background {
@@ -18162,7 +18161,8 @@ body {
             height: 586.072px;
             top: -56.6899px;
             left: 0px;
-            background-image: url("https://w.ladicdn.com/s750x900/5c458ab85341600348800ad4/11-20210312034124.png");
+            /*background-image: url("https://w.ladicdn.com/s750x900/5c458ab85341600348800ad4/11-20210312034124.png");*/
+            background-image: url('../images/hinhanhsukien2.png');
         }
 
     #HEADLINE4191 {
@@ -18182,7 +18182,7 @@ body {
 
     #SECTION4192 {
         height: 519.884px;
-        margin-top: -974px;
+        margin-top: -458px;
     }
 
     #IMAGE4193 {
