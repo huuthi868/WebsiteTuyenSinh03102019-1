@@ -287,6 +287,7 @@
     <Content Include="assets\client\js\engine1\ws-ctrl-rhomb.ttf" />
     <Content Include="assets\client\js\engine1\ws-ctrl-rhomb.woff" />
     <None Include="Properties\PublishProfiles\clientBanTuyenSinh.pubxml" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
