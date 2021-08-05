@@ -239,12 +239,7 @@
     <Content Include="assets\client\img\newicon_vi.gif" />
     <Content Include="assets\client\img\thong-tin-dang-ky.png" />
     <Content Include="assets\client\img\thong-tin-thi-sinh.png" />
-    <Content Include="assets\client\jsdb\DangKyTrungCapTHCS.js" />
-    <Content Include="assets\client\jsdb\DangKyLienThongjs.js" />
-    <Content Include="assets\client\jsdb\DangKyTrungCapTHPT.js" />
     <Content Include="assets\client\jsdb\GuiCauHoijs.js" />
-    <Content Include="assets\client\jsdb\GuiLienHejs.js" />
-    <Content Include="assets\client\jsdb\DangKyCaoDangjs.js" />
     <Content Include="assets\client\js\angular.min.js" />
     <Content Include="assets\client\js\bootbox.js" />
     <Content Include="assets\client\js\bootstrap-datepicker-vi.js" />
@@ -300,43 +295,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Data\App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\DangKyController.cs" />
-    <Compile Include="Controllers\GioiThieuController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\KetQuaController.cs" />
-    <Compile Include="Controllers\LienHeController.cs" />
-    <Compile Include="Controllers\NganhDaoTaoController.cs" />
-    <Compile Include="Controllers\PhongKhoaController.cs" />
-    <Compile Include="Controllers\TinSinhVienController.cs" />
-    <Compile Include="Controllers\TinTuyenSinhController.cs" />
-    <Compile Include="Controllers\TuVanController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="GlobalVariables.cs" />
-    <Compile Include="Models\ChiTietViewModel.cs" />
-    <Compile Include="Models\DangKyCaoDangViewModel.cs" />
-    <Compile Include="Models\DangKyLienThongCaoDangViewModel.cs" />
-    <Compile Include="Models\DangKyTrungCap2NamViewModel.cs" />
-    <Compile Include="Models\GioiThieuTruongViewModel.cs" />
-    <Compile Include="Models\HoiDapViewModel.cs" />
-    <Compile Include="Models\KetQuaViewModel.cs" />
-    <Compile Include="Models\ThongBaoKetQuaViewModel.cs" />
-    <Compile Include="Models\LienHeViewModel.cs" />
-    <Compile Include="Models\NgheDaoTaoViewModel.cs" />
-    <Compile Include="Models\PhongKhoaViewModel.cs" />
-    <Compile Include="Models\PhongKhoa_NgheViewModel.cs" />
-    <Compile Include="Models\SliderViewModel.cs" />
-    <Compile Include="Models\SinhVienTieuBieuViewModel.cs" />
-    <Compile Include="Models\ThongBaoTuyenSinhViewModel.cs" />
-    <Compile Include="Models\TinLienQuanViewModel.cs" />
-    <Compile Include="Models\TinSinhVienViewModel.cs" />
-    <Compile Include="Models\TinTuyenSinhViewModel.cs" />
-    <Compile Include="Models\TrangChuViewModel.cs" />
-    <Compile Include="Models\TuVanTrucTuyenViewModel.cs" />
+    <Compile Include="Models\DangKyTuVanViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TinTucViewModel.cs" />
-    <Compile Include="TinTucViewModel1.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -348,39 +313,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\NganhDaoTao\ChiTiet.cshtml" />
-    <Content Include="Views\DangKy\CaoDang.cshtml" />
-    <Content Include="Views\DangKy\TrungCapTHPT.cshtml" />
-    <Content Include="Views\DangKy\TrungCapTHCS.cshtml" />
-    <Content Include="Views\DangKy\LienThong.cshtml" />
     <Content Include="Views\Home\TrangChu.cshtml" />
-    <Content Include="Views\TinTuyenSinh\ChiTiet.cshtml" />
-    <Content Include="Views\LienHe\LienHe.cshtml" />
-    <Content Include="Views\KetQua\KetQua.cshtml" />
-    <Content Include="Views\TuVan\TuVan.cshtml" />
-    <Content Include="Views\NganhDaoTao\NganhDaoTao.cshtml" />
-    <Content Include="Views\TinTuyenSinh\TinTuyenSinh.cshtml" />
-    <Content Include="Views\DangKy\DangKy.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\TinSinhVien\TinSinhVien.cshtml" />
-    <Content Include="Views\TinSinhVien\ChiTietSinhVienNoiBat.cshtml" />
-    <Content Include="Views\GioiThieu\BanGiamHieu.cshtml" />
-    <Content Include="Views\GioiThieu\CongDoan.cshtml" />
-    <Content Include="Views\GioiThieu\CoSoVatChat.cshtml" />
-    <Content Include="Views\GioiThieu\DangBo.cshtml" />
-    <Content Include="Views\GioiThieu\DinhHuongPhatTrien.cshtml" />
-    <Content Include="Views\GioiThieu\DoanThanhNien.cshtml" />
-    <Content Include="Views\GioiThieu\GioiThieuTruong.cshtml" />
-    <Content Include="Views\GioiThieu\KyYeuNhaTruong.cshtml" />
-    <Content Include="Views\GioiThieu\LichSuPhatTrien.cshtml" />
-    <Content Include="Views\GioiThieu\MucTieuChatLuong.cshtml" />
-    <Content Include="Views\GioiThieu\NangLucDaoTao.cshtml" />
-    <Content Include="Views\GioiThieu\SoDoToChuc.cshtml" />
-    <Content Include="Views\GioiThieu\ThanhTichDatDuoc.cshtml" />
-    <Content Include="Views\PhongKhoa\ChiTietPhongKhoa.cshtml" />
-    <Content Include="Views\PhongKhoa\Khoa.cshtml" />
-    <Content Include="Views\PhongKhoa\Phong.cshtml" />
-    <Content Include="Views\Shared\_RightBody.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

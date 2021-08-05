@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 using WebsiteTuyenSinh.Models;
 
 namespace WebsiteTuyenSinh.Controllers
@@ -16,36 +18,31 @@ namespace WebsiteTuyenSinh.Controllers
     {
         public async Task<ActionResult> TrangChu()
         {
-            TrangChuViewModel cls = new TrangChuViewModel();
-            HttpResponseMessage Res = await GlobalVariables.WebApiClient.GetAsync("api/Slider/getall");
-            if (Res.IsSuccessStatusCode)
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> CreateDangKyTuVan(string model)
+        {
+            var cls = new JavaScriptSerializer();
+            var entity = cls.Deserialize<DangKyTuVanViewModel>(model);
+
+            var strCauHoi = entity.NgheTuVan.Split(',', '\"').Where(x => x.Length > 3);
+            var cauhoi = "";
+            foreach (var item in strCauHoi)
             {
-                var obj = Res.Content.ReadAsStringAsync().Result;
-                cls.Slider = JsonConvert.DeserializeObject<List<SliderViewModel>>(obj);
+                cauhoi += item + ",";
             }
 
-            Res = await GlobalVariables.WebApiClient.GetAsync($"api/TinTuyenSinh/getbySkipTake?skip={0}&take={9}");
+            cauhoi = cauhoi.Substring(0, cauhoi.Length - 1);
+            entity.NgheTuVan = cauhoi;
+
+            var Res = await GlobalVariables.WebApiClient.PostAsJsonAsync("api/DangKyTuVan/create", entity);
             if (Res.IsSuccessStatusCode)
             {
-                var obj = Res.Content.ReadAsStringAsync().Result;
-                cls.Top3TinTuyenSinh = JsonConvert.DeserializeObject<List<TinTuyenSinhViewModel>>(obj).Skip(0).Take(3).ToList();
-                cls.TinLienQuanTuyenSinh = JsonConvert.DeserializeObject<List<TinTuyenSinhViewModel>>(obj).Skip(3).Take(6).ToList();
+                return Json(new { status = true });
             }
-
-            //Res = await GlobalVariables.WebApiClient.GetAsync($"api/TinTuyenSinh/getbySkipTake?skip={3}&take={5}");
-            //if (Res.IsSuccessStatusCode)
-            //{
-            //    var obj = Res.Content.ReadAsStringAsync().Result;
-            //    cls.TinLienQuanTuyenSinh = JsonConvert.DeserializeObject<List<TinTuyenSinhViewModel>>(obj);
-            //}
-
-            Res = await GlobalVariables.WebApiClient.GetAsync("api/TinLienQuan/getall");
-            if (Res.IsSuccessStatusCode)
-            {
-                var obj = Res.Content.ReadAsStringAsync().Result;
-                cls.TinLienQuan = JsonConvert.DeserializeObject<List<TinLienQuanViewModel>>(obj);
-            }
-            return View(cls);
+            return RedirectToAction("TrangChu");
         }
     }
 }

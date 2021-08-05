@@ -1,20 +1,18 @@
 namespace WebsiteTuyenSinh.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-
-    public partial class TinLienQuanViewModel
+    public partial class DangKyTuVanViewModel
     {
         public long ID { get; set; }
 
-        public string TieuDe { get; set; }
+        public string HoTen { get; set; }
 
-        public string LienKet { get; set; }
-        public int STT { get; set; }
+        public string Email { get; set; }
 
-        public string Mau { get; set; }
+        public string SoDienThoai { get; set; }
+
+        public string NgheTuVan { get; set; }
+
+        public bool? KichHoat { get; set; }
 
         public string NgayTao { get; set; }
 

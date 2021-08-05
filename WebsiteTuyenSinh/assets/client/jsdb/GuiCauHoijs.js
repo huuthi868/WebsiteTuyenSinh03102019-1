@@ -2,15 +2,10 @@
     init: function () {
         GuiCauHoijs.registerEvent();
     },
-    registerEvent: function () {
-        $('#txtTuKhoa').keyup(function (e) {
-            if (e.keyCode === 13) {
-                GuiCauHoijs.searchCauHoi();
-            }
-        });
-
+    registerEvent: function () {       
         $('.btnGuiCauHoi').off('click').on('click', function (e) {
             e.preventDefault();
+
             var HoTen = $('#HoTen').val();
             var SoDienThoai = $('#SoDienThoai').val();
             var CauHoi = $('#CauHoi').val();
@@ -38,11 +33,9 @@
         var day = d.getDate();
         var model = {
             HoTen: $('#HoTen').val(),
-            NamSinh: $('#NamSinh').val(),
-            DiaChi: $('#DiaChi').val(),
-            EmailNguoiHoi: $('#EmailNguoiHoi').val(),
+            Email: $('#EmailNguoiHoi').val(),
             SoDienThoai: $('#SoDienThoai').val(),
-            CauHoi: $('#CauHoi').val(),
+            NgheTuVan: $('#CauHoi').val(),
             KichHoat: false,
             NgayTao: (day < 10 ? '0' : '') + day + '/' + (month < 10 ? '0' : '') + month + '/' + d.getFullYear(),
             NguoiTao: 'Guest',
@@ -53,7 +46,7 @@
             NguoiXoa: null
         };
         $.ajax({
-            url: '/TuVan/CreateHoiDap/',
+            url: '/Home/CreateDangKyTuVan/',
             data: { model: JSON.stringify(model).toString() },
             type: 'POST',
             dataType: 'json',
@@ -75,18 +68,13 @@
                 }
             }
         });
-    },
-    searchCauHoi: function () {
-        var tukhoa = $('#txtTuKhoa').val();
-        window.location.href = '/hoi-dap/tim-kiem?tukhoa=' + tukhoa;
-    },
+    },   
     resetForm: function () {
         $('#HoTen').val('');
-        $('#NamSinh').val('');
-        $('#DiaChi').val('');
         $('#EmailNguoiHoi').val('');
         $('#SoDienThoai').val('');
         $('#CauHoi').val('');
+
         $(".btnGuiCauHoi").removeAttr("disabled");
     }
 };
