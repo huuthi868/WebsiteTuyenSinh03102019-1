@@ -2469,7 +2469,7 @@ body {
             top: -18.372px;
             left: 0px;
             /*background-image: url("https://w.ladicdn.com/s800x650/5c458ab85341600348800ad4/img_8826-20200722031325.jpg");*/
-            background-image: url('../images/anhnghe/quangtriluhanh.png');
+            background-image: url('../images/anhnghe/quangtriluhanh.jpg');
         }
 
         #IMAGE3148 > .ladi-image {
@@ -5454,7 +5454,8 @@ body {
             top: 0px;
             left: 0px;
             /*background-image: url("https://w.ladicdn.com/s1440x1440/5f6bf05ae431d7462e8e713f/huuthi_optimized-20210624073355.png");*/
-            background-image: url('https://mangnoibo.cdktcnqn.edu.vn/d/s/lGVgdDdAomrGugqE8n6XDqQrslYCOheX/webapi/entry.cgi/hinhvy.png?api=SYNO.SynologyDrive.Files&method=download&version=2&files=%5B%22id%3A639848100957041453%22%5D&force_download=false&sharing_token=%22jZZ18tQRjTVUy.EYBtGMluK_Qd7hSiwVD_hi49y6GZHVBjLJXOaSeKu7QYGEBc0OPhdzZf.v1C7rs3IsFikWNbHfuc8zp_dctfc_qE72gg3l3GQwIalEyJUg0KV.1HdnIxksDjRllscg_7YFMDEr4mWD6FUF1ZtqRZED37pZUAUc2yhnDKLOM2s0os8jnSvt.fSQ36D7H_vUbDkwD_tddX3tTaaGXSDqIl1yzUI3gpvmxXpkPkb8JHyn%22&_dc=1630479383418');
+            /*background-image: url('https://mangnoibo.cdktcnqn.edu.vn/d/s/lGVgdDdAomrGugqE8n6XDqQrslYCOheX/webapi/entry.cgi/hinhvy.png?api=SYNO.SynologyDrive.Files&method=download&version=2&files=%5B%22id%3A639848100957041453%22%5D&force_download=false&sharing_token=%22jZZ18tQRjTVUy.EYBtGMluK_Qd7hSiwVD_hi49y6GZHVBjLJXOaSeKu7QYGEBc0OPhdzZf.v1C7rs3IsFikWNbHfuc8zp_dctfc_qE72gg3l3GQwIalEyJUg0KV.1HdnIxksDjRllscg_7YFMDEr4mWD6FUF1ZtqRZED37pZUAUc2yhnDKLOM2s0os8jnSvt.fSQ36D7H_vUbDkwD_tddX3tTaaGXSDqIl1yzUI3gpvmxXpkPkb8JHyn%22&_dc=1630479383418');*/
+            background-image: url('../images/hinhvy.png');
         }
 
         #IMAGE4045.ladi-animation > .ladi-image {
@@ -6136,7 +6137,7 @@ body {
             border-radius: 8px;
         }
 
-    #IMAGE4084 {
+    /*#IMAGE4084 {
         width: 386.745px;
         height: 328.6px;
         top: 10.6205px;
@@ -6147,15 +6148,15 @@ body {
             width: 497.566px;
             height: 328.6px;
             top: -0.000115px;
-            left: -56.7934px;
+            left: -56.7934px;*/
             /*background-image: url("https://w.ladicdn.com/s800x650/5c458ab85341600348800ad4/hoc-nghe-nha-hang-khach-san-o-duc-can-biet-1568435186.jpg");*/
             /*background-image: url('../images/oto.png');*/
-            background-image: url('../images/anhnghe/codientu.JPG');
+            /*background-image: url('../images/anhnghe/codientu.JPG');
         }
 
         #IMAGE4084 > .ladi-image {
             border-radius: 6px;
-        }
+        }*/
 
     #GROUP4085 {
         width: 413px;
@@ -9126,7 +9127,8 @@ body {
             top: -15.967px;
             left: -34.455px;
             /* background-image: url("https://w.ladicdn.com/s750x600/5c458ab85341600348800ad4/img_5072-20200728021823.jpg");*/
-            background-image: url('https://mangnoibo.cdktcnqn.edu.vn/d/s/lGVvIjFuvOpIPJXGcsSWscI3Xgjgiehq/webapi/entry.cgi/huongdandulich01.png?api=SYNO.SynologyDrive.Files&method=download&version=2&files=%5B%22id%3A639848934189085855%22%5D&force_download=false&sharing_token=%22WWuYWcp_cYrZpWj_RIzzpheD0_7YlV8yjfIFTn3TijM9P1MWRpmIw1radIuljLnrDl7PzqoGbR5QtufPzKbVnoa6MryE8CExrKwJBC62aw7kSjxFnBMFLrDxamuSk8XAiSkCViZC7sXLABOkszdm7vT_SsKClG9b3nIOUcCA5JU57A8PKkfnqqWycGpPXfCt_0cy4BIu9sbrPgi66PlRa3tCIX_OXYHz.qCwzNcP6pfETH4aXbj7hPpc%22&_dc=1630479863701');
+            /*background-image: url('https://mangnoibo.cdktcnqn.edu.vn/d/s/lGVvIjFuvOpIPJXGcsSWscI3Xgjgiehq/webapi/entry.cgi/huongdandulich01.png?api=SYNO.SynologyDrive.Files&method=download&version=2&files=%5B%22id%3A639848934189085855%22%5D&force_download=false&sharing_token=%22WWuYWcp_cYrZpWj_RIzzpheD0_7YlV8yjfIFTn3TijM9P1MWRpmIw1radIuljLnrDl7PzqoGbR5QtufPzKbVnoa6MryE8CExrKwJBC62aw7kSjxFnBMFLrDxamuSk8XAiSkCViZC7sXLABOkszdm7vT_SsKClG9b3nIOUcCA5JU57A8PKkfnqqWycGpPXfCt_0cy4BIu9sbrPgi66PlRa3tCIX_OXYHz.qCwzNcP6pfETH4aXbj7hPpc%22&_dc=1630479863701');*/
+            background-image: url('../images/anhnghe/huongdandulich01.jpg');
         }
 
         #IMAGE4258 > .ladi-image {
@@ -14806,7 +14808,7 @@ body {
         }
 
 
-    #IMAGE40841 {
+    /*#IMAGE40841 {
         width: 386.745px;
         height: 328.6px;
         top: 10.62px;
@@ -14817,15 +14819,15 @@ body {
             width: 497.566px;
             height: 328.6px;
             top: -0.000115px;
-            left: -56.7934px;
+            left: -56.7934px;*/
             /*background-image: url("https://w.ladicdn.com/s800x650/5c458ab85341600348800ad4/hoc-nghe-nha-hang-khach-san-o-duc-can-biet-1568435186.jpg");*/
             /* background-image: url('../images/oto.png');*/
-            background-image: url('../images/anhnghe/codientu.JPG');
+            /*background-image: url('../images/anhnghe/codientu.JPG');
         }
 
         #IMAGE40841 > .ladi-image {
             border-radius: 6px;
-        }
+        }*/
 
     #IMAGE40842 {
         width: 386.745px;
@@ -15143,7 +15145,7 @@ body {
             top: -0.000115px;
             left: -56.7934px;
             /*background-image: url("https://w.ladicdn.com/s800x650/5c458ab85341600348800ad4/hoc-nghe-nha-hang-khach-san-o-duc-can-biet-1568435186.jpg");*/
-            background-image: url('../images/anhnghe/santruong.JPG');
+            background-image: url('../images/anhnghe/diencongnghiep.JPG');
         }
 
         #IMAGE408417 > .ladi-image {
@@ -15163,7 +15165,7 @@ body {
             top: -0.000115px;
             left: -56.7934px;
             /*background-image: url("https://w.ladicdn.com/s800x650/5c458ab85341600348800ad4/hoc-nghe-nha-hang-khach-san-o-duc-can-biet-1568435186.jpg");*/
-            background-image: url('../images/santruong.jpg');
+            background-image: url('../images/anhnghe/diencongnghiep.jpg');
         }
 
         #IMAGE408418 > .ladi-image {
@@ -15183,7 +15185,7 @@ body {
             top: -0.000115px;
             left: -56.7934px;
             /*background-image: url("https://w.ladicdn.com/s800x650/5c458ab85341600348800ad4/hoc-nghe-nha-hang-khach-san-o-duc-can-biet-1568435186.jpg");*/
-            background-image: url('../images/santruong.jpg');
+            background-image: url('../images/anhnghe/diencongnghiep.jpg');
         }
 
         #IMAGE408419 > .ladi-image {
@@ -19659,7 +19661,7 @@ details[open] > summary::after {
         top: -0.000115px;
         left: -56.7934px;
         /*background-image: url("https://w.ladicdn.com/s800x650/5c458ab85341600348800ad4/hoc-nghe-nha-hang-khach-san-o-duc-can-biet-1568435186.jpg");*/
-        background-image: url('../images/santruong.jpg');
+        background-image: url('../images/anhnghe/diencongnghiep.jpg');
     }
 
     #IMAGE408418 > .ladi-image {
