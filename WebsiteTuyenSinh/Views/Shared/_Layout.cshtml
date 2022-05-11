@@ -45,7 +45,7 @@
     </script>
     <link rel="stylesheet" href="~/assets/client/css/stylelangdingpage.css" />
     <link href="~/assets/client/css/slider01.css" rel="stylesheet" />
-
+    <link href="~/assets/client/css/slider02.css" rel="stylesheet" />
     <link href="~/assets/client/css/jquery.toast.css" rel="stylesheet" />
     <link href="~/assets/client/css/bootstrap-datepicker.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -73,7 +73,7 @@
 </head>
 
 
-<body>
+<body onLoad="setTimeout('thongbaopopup()', 5000)">
     @RenderBody()
     @RenderSection("scripts", required: false)
 </body>

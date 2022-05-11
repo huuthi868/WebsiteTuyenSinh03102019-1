@@ -222,7 +222,7 @@
 
 .imgScrollWrap_1, .imgScrollWrap_3 {
     position: relative;
-    height: 120px;
+    height: 554px;
     border: 1px #fffefe solid;
     overflow: hidden;
 }
@@ -239,12 +239,12 @@
 }
 
 .imgScrollBtn01_1, .imgScrollBtn01_3 {
-    top: 40px;
+    top: 297px;
     left: 0;
 }
 
 .imgScrollBtn02_1, .imgScrollBtn02_3 {
-    top: 40px;
+    top: 297px;
     right: 0;
     background-position: -22px 0;
 }
@@ -260,9 +260,9 @@
 .imgScrollList_1, .imgScrollList_3 {
     position: absolute;
     top: 0;
-    left: -34px;
+    left: -5px;
     width: 1032px;
-    height: 120px;
+    height: 551px;
     overflow: hidden;
     z-index: 1;
 }
@@ -270,21 +270,21 @@
     .imgScrollList_1 ul, .imgScrollList_3 ul {
         position: relative;
         width: 9999px;
-        height: 120px;
+        height: 551px;
     }
 
     .imgScrollList_1 li, .imgScrollList_3 li {
         float: left;
-        width: 141px;
-        height: 120px;
+        width: 483px;
+        height: 550px;
         overflow: hidden;
     }
 
         .imgScrollList_1 li a, .imgScrollList_3 li a {
             float: left;
             margin: 12px 6px;
-            width: 128px;
-            height: 96px;
+            width: 481px;
+            height: 538px;
             overflow: hidden;
         }
 

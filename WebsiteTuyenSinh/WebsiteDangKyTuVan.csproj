@@ -77,6 +77,9 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="RazorEngine, Version=3.10.0.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorEngine.3.10.0\lib\net45\RazorEngine.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
@@ -134,77 +137,41 @@
     <Content Include="assets\client\css\style.css" />
     <Content Include="assets\client\css\stylelangdingpage.css" />
     <Content Include="assets\client\font\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="assets\client\images\1.jpg" />
-    <Content Include="assets\client\images\2.jpg" />
-    <Content Include="assets\client\images\3.jpg" />
     <Content Include="assets\client\images\674.png" />
-    <Content Include="assets\client\images\anhnghe\catgotkimloai.jpg" />
-    <Content Include="assets\client\images\anhnghe\channuoithuy.jpg" />
-    <Content Include="assets\client\images\anhnghe\chetaothietbicokhi.JPG" />
-    <Content Include="assets\client\images\anhnghe\codientu.JPG" />
-    <Content Include="assets\client\images\anhnghe\congngheoto.JPG" />
-    <Content Include="assets\client\images\anhnghe\congnghethongtin.JPG" />
-    <Content Include="assets\client\images\anhnghe\diencongnghiep.jpg" />
-    <Content Include="assets\client\images\anhnghe\dientucongnghiep.jpg" />
+    <Content Include="assets\client\images\anh1.jpg" />
+    <Content Include="assets\client\images\anh2.jpg" />
     <Content Include="assets\client\images\anhnghe\dulichluhanh01.jpg" />
-    <Content Include="assets\client\images\anhnghe\han.JPG" />
-    <Content Include="assets\client\images\anhnghe\huongdandulich.png" />
-    <Content Include="assets\client\images\anhnghe\huongdandulich01.png" />
-    <Content Include="assets\client\images\anhnghe\ketoan.jpg" />
-    <Content Include="assets\client\images\anhnghe\khoahoccaytrong.jpg" />
-    <Content Include="assets\client\images\anhnghe\ktcbmn.jpg" />
-    <Content Include="assets\client\images\anhnghe\ktdn.jpg" />
-    <Content Include="assets\client\images\anhnghe\quangtriluhanh.png" />
-    <Content Include="assets\client\images\anhnghe\quangtrimang.JPG" />
-    <Content Include="assets\client\images\anhnghe\quangtrinhahang.JPG" />
-    <Content Include="assets\client\images\anhnghe\quantrinhahang.jpg" />
-    <Content Include="assets\client\images\anhnghe\santruong.JPG" />
-    <Content Include="assets\client\images\anhnghe\suachualaprapmaytinh.JPG" />
-    <Content Include="assets\client\images\anhnghe\tienganh.jpg" />
-    <Content Include="assets\client\images\anhnghe\tienganhdulich.png" />
-    <Content Include="assets\client\images\anhnghe\trongtrotvabaovethucvat.jpg" />
-    <Content Include="assets\client\images\anhnghe\tudonghoacongnghiep.JPG" />
-    <Content Include="assets\client\images\anhnghe\vanhanhsuachuathietbilanh.jpg" />
-    <Content Include="assets\client\images\bg.png" />
+    <Content Include="assets\client\images\anhnghe\huongdandulich01.jpg" />
+    <Content Include="assets\client\images\anhnghe\quangtriluhanh.jpg" />
     <Content Include="assets\client\images\cfe.png" />
+    <Content Include="assets\client\images\chanhtinh.jpg" />
     <Content Include="assets\client\images\check.png" />
     <Content Include="assets\client\images\cohoi.png" />
     <Content Include="assets\client\images\congtruong.png" />
-    <Content Include="assets\client\images\conhung.jpg" />
     <Content Include="assets\client\images\coollogo_com-28052480.png" />
     <Content Include="assets\client\images\dantriganket.png" />
     <Content Include="assets\client\images\daotaodatchuan.png" />
     <Content Include="assets\client\images\dautunghe.png" />
-    <Content Include="assets\client\images\dientu.png" />
-    <Content Include="assets\client\images\dtth.jpg" />
+    <Content Include="assets\client\images\dientu.jpg" />
     <Content Include="assets\client\images\ew.png" />
     <Content Include="assets\client\images\ew1.png" />
     <Content Include="assets\client\images\ffff.png" />
-    <Content Include="assets\client\images\hieutruong.png" />
-    <Content Include="assets\client\images\hinhanhsukien.png" />
-    <Content Include="assets\client\images\hinhanhsukien1.png" />
-    <Content Include="assets\client\images\hinhanhsukien2.png" />
+    <Content Include="assets\client\images\hinhanhsukien1.jpg" />
+    <Content Include="assets\client\images\hinhanhsukien2.jpg" />
     <Content Include="assets\client\images\hinhvy.png" />
-    <Content Include="assets\client\images\hinhvy1.png" />
     <Content Include="assets\client\images\hoavy.jpg" />
-    <Content Include="assets\client\images\hung.png" />
     <Content Include="assets\client\images\huuthi.png" />
-    <Content Include="assets\client\images\huuthi1.png" />
-    <Content Include="assets\client\images\huuthi2.png" />
-    <Content Include="assets\client\images\ken1.png" />
     <Content Include="assets\client\images\kiemdinhchatluong.png" />
-    <Content Include="assets\client\images\ktcbmn.jpg" />
     <Content Include="assets\client\images\ktx.png" />
     <Content Include="assets\client\images\ladi-icons.svg" />
     <Content Include="assets\client\images\ladipage-play.svg" />
     <Content Include="assets\client\images\logotuyensinh.png" />
+    <Content Include="assets\client\images\manhtuong.jpg" />
     <Content Include="assets\client\images\msg.png" />
     <Content Include="assets\client\images\nencontent.png" />
     <Content Include="assets\client\images\nenheader.jpg" />
     <Content Include="assets\client\images\opensans-extrabolditalic-1562122442.ttf" />
-    <Content Include="assets\client\images\oto.png" />
     <Content Include="assets\client\images\quc.png" />
-    <Content Include="assets\client\images\santruong.JPG" />
     <Content Include="assets\client\images\sinhvien.png" />
     <Content Include="assets\client\images\songoaivu.png" />
     <Content Include="assets\client\images\thanhphong.jpg" />
@@ -212,8 +179,9 @@
     <Content Include="assets\client\images\thietbinghe.png" />
     <Content Include="assets\client\images\trangchu.png" />
     <Content Include="assets\client\images\voucher01.png" />
+    <Content Include="assets\client\images\voucher011.png" />
     <Content Include="assets\client\images\xinh.jpg" />
-    <Content Include="assets\client\images\zalo.png" />
+    <Content Include="assets\client\images\xuantruong.jpg" />
     <Content Include="assets\client\img\arrow-right.png" />
     <Content Include="assets\client\img\backDangKy.jpg" />
     <Content Include="assets\client\img\background.png" />
@@ -302,6 +270,7 @@
     </Compile>
     <Compile Include="GlobalVariables.cs" />
     <Compile Include="Models\DangKyTuVanViewModel.cs" />
+    <Compile Include="Models\SendEmailViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -316,6 +285,7 @@
     <Content Include="scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\TrangChu.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\EmailBody.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
